@@ -1,0 +1,7 @@
+{
+  "name": "TheZaikaApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
