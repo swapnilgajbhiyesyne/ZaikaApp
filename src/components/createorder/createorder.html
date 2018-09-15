@@ -1,0 +1,49 @@
+<!-- Generated template for the CreateorderComponent component -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>
+     Create Order
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <td class="warning">Item</td>
+      <td class="warning">Type</td>
+      <td class="warning">Price</td>
+      <td class="warning">Quantity</td>
+
+      <td class="warning" >Total</td>
+      <td class="warning">Action</td>
+
+  </tr>
+  </thead>
+
+  <tbody>
+      <tr *ngFor="let item of orderlist| itemfilter : searchText">
+        <td><input [(ngModel)]="searchText" placeholder=""/></td>
+          <!-- <td>{{ item.name }}</td> -->
+      <td>
+        {{mushrooms}}
+  <ion-toggle  checked="" (ionChange)="updateType(item)" [(ngModel)]="mushrooms"></ion-toggle>
+      </td>
+          <td>{{ item.price }}</td>
+          <td>
+      <ion-input type="number"></ion-input>
+
+          </td>
+          <td>NA</td>
+
+          <!-- <td><a [routerLink]="['/edit', coin._id]" class="btn btn-primary">Edit</a></td> -->
+          <td><a routerLink="" class="btn btn-danger">Place Order</a></td>
+      </tr>
+  </tbody>
+</table>
+<input [(ngModel)]="searchText" placeholder="search item "/>
+    <ul>
+      <li ng-if="" *ngFor="let c of orderlist | itemfilter : searchText">
+        {{c.name}}
+      </li>
+    </ul>

@@ -1,0 +1,25 @@
+<!-- Generated template for the ItemlistComponent component -->
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>
+     Items Details
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+  Serach: <input [(ngModel)]="searchText" placeholder="search item "/>
+    <ul>
+      <li ng-if="" *ngFor="let c of characters | autocomplete : searchText">
+        {{c}}
+      </li>
+    </ul>
+    <button ion-button (click)="presentModal()">Add Item</button>
+    <ion-list *ngFor="let c of characters">
+      <ion-item style="background-color: #114e3529">
+          <!-- <ion-input [(ngModel)]="c" ></ion-input> -->
+          {{c}}
+          <button ion-button>Edit</button>
+      <button ion-button color="danger">Remove</button>
+      </ion-item>
+      
+    </ion-list>
+

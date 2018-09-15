@@ -6,11 +6,20 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-
+import {ItemlistComponent} from '../components/itemlist/itemlist';
+import {AutoCompletePipe} from '../pipes/autocomplete'
+import {ItemfilterPipe} from '../pipes/itemfilter/itemfilter'
+import {AdditemPage} from '../pages/additem/additem'
+import {CreateorderComponent} from '../components/createorder/createorder'
+import {OrdersgraphComponent} from '../components/ordersgraph/ordersgraph'
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    ItemlistComponent,AutoCompletePipe,ItemfilterPipe,
+    AdditemPage,
+    CreateorderComponent,
+    OrdersgraphComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +28,11 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    ItemlistComponent,
+    AdditemPage,
+    CreateorderComponent,
+    OrdersgraphComponent
   ],
   providers: [
     StatusBar,

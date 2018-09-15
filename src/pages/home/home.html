@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Zaika 
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -11,4 +11,11 @@
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
+  <button ion-button large color="dark" outline (click)="showlist()">Item List</button>
+  <button ion-button large color="dark" outline>Order History</button>
+  <button ion-button large color="dark" outline>Inventory Management</button>
+  <button ion-button large color="dark" outline>Profit/Loss</button>
+  <button ion-button large color="dark" outline (click)="showGraph()">Orders Graph</button>
+  <button ion-button large color="dark" outline (click)="createOrder()">Create Order</button>
+
 </ion-content>
